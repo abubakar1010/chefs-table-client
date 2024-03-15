@@ -1,14 +1,13 @@
 
 import './App.css'
+import NavBar from './components/NavBar/NavBar'
 
 function App() {
 
 
   return (
     <>
-
-    <p className='bg-pink-800 text-xl from-black p-8'>Project setup with react and tailwind css </p>
-    
+      <NavBar />
     </>
   )
 }
