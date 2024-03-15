@@ -6,10 +6,10 @@ const NavBar = () => {
 
 
 
-    <nav className="bg-white fixed w-full z-20 top-0 start-0 my-8">
+    <nav className="container mx-auto my-8">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <div href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse" >
-                <h1 className="self-center text-2xl font-semibold whitespace-nowrap text-black">Recipe Calories</h1>
+                <h1 className="self-center text-3xl font-bold whitespace-nowrap text-[#150B2B]">Recipe Calories</h1>
             </div>
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
 
@@ -19,7 +19,7 @@ const NavBar = () => {
     <form className="max-w-md mx-auto hidden lg:block">   
         
         <div className="relative">
-            <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none ">
                 <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                 </svg>
@@ -35,7 +35,7 @@ const NavBar = () => {
 
         {/* account image start here  */}
 
-        <div>
+        <div className="bg-[#0BE58A] p-2 rounded-full">
         <img src="account.svg" className="" />
         </div>
 

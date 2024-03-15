@@ -5,8 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'banner': "linear-gradient(to right bottom, #150B2BE5, #150B2B00), url('banner.jpeg')",
+      },
+    },
   },
   plugins: [],
 }
+
 
