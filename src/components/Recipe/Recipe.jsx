@@ -1,34 +1,19 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types"
 import { useState } from 'react';
 
-const Recipe = ({data}) => {
+const Recipe = ({data,handleAddRecipe}) => {
     // console.log(data);
     const {name,description,image,ingredients,preparing_time,calories} = data
     // console.log(name,description,image,ingredients,preparing_time,calories,tags);
 
     const [isShowMore, setIsShowMore] = useState(false)
 
-    // const handleShowMoreButton = () => {
-
-    //     if (!isShowMore) {
-    //         // const limitedData = ingredients.splice(0,8);
-
-    //         ingredients.splice(0,8)
-
-    //         // const showLimitedList = limitedData.map( (element,index) => <li key={index}>{element}</li>)
-
-    //         // return showLimitedList
-    //     }
-
-    //     return ingredients
-    // }
-
     let limitedData
 
     if (!isShowMore) {
         
         limitedData = ingredients.slice(0,5)
-        console.log( limitedData.length);
+        // console.log( limitedData.length);
     }
 
     if(isShowMore){
@@ -36,15 +21,16 @@ const Recipe = ({data}) => {
         console.log(limitedData.length);
     }
 
-    // const btn = <button onClick={ () => setIsShowMore(!isShowMore)} className='text-[rgba(135,135,135,1)] text-lg'>... See More</button>
+    
+
 
     return (
         <>
             <section>
-                <div className=' w-[420px] mx-h-[670px] bg-white shadow-xl rounded-2xl py-9'>
+                <div className=' w-[370px] mx-h-[670px] bg-white shadow-xl rounded-2xl py-9'>
 
                 <div className='pb-6'>
-                    <img src={image} alt="" className='w-[370px] h-[250px] mx-auto  rounded-2xl' />
+                    <img src={image} alt="" className='w-[320px] h-[200px] mx-auto  rounded-2xl' />
                     
                 </div>
                     
@@ -86,7 +72,7 @@ const Recipe = ({data}) => {
                     </div>
 
                     <div className=' px-8 pt-4'>
-                        <button className='text-[rgba(21,11,43,1)] bg-[rgba(11,229,138,1)]  font-medium rounded-full text-sm px-7 py-3 text-center '>Want to cook</button>
+                        <button className='text-[rgba(21,11,43,1)] bg-[rgba(11,229,138,1)]  font-medium rounded-full text-sm px-7 py-3 text-center ' onClick={ () => handleAddRecipe(name, preparing_time, calories)}>Want to cook</button>
                     </div>
 
                 </div>
@@ -97,7 +83,8 @@ const Recipe = ({data}) => {
 
 Recipe.propTypes = {
 
-    data: PropTypes.object.isRequired
+    data: PropTypes.object.isRequired,
+    handleAddRecipe: PropTypes.func.isRequired
 }
 
 export default Recipe;
