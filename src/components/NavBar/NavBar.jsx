@@ -55,13 +55,13 @@ const NavBar = () => {
                         <a href="#" className="block py-2 px-3 text-[#150B2BB2]">Home</a>
                     </li>
                     <li>
+                        <a href="#" className="block py-2 px-3 text-[#150B2BB2]">Recipes</a>
+                    </li>
+                    <li>
                         <a href="#" className="block py-2 px-3 text-[#150B2BB2]">About</a>
                     </li>
                     <li>
-                        <a href="#" className="block py-2 px-3 text-[#150B2BB2]">Services</a>
-                    </li>
-                    <li>
-                        <a href="#" className="block py-2 px-3 text-[#150B2BB2]">Contact</a>
+                        <a href="#" className="block py-2 px-3 text-[#150B2BB2]">Search</a>
                     </li>
                 </ul>
             </div>
