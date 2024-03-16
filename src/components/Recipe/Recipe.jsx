@@ -1,16 +1,25 @@
+import PropTypes from 'prop-types';
 
-const Recipe = () => {
+const Recipe = ({data}) => {
+    // console.log(data);
+    const {name,description,image,ingredients,preparing_time,calories,tags} = data
+    console.log(name,description,image,ingredients,preparing_time,calories,tags);
     return (
         <>
-            <section className=" my-28 ">
-                
-                <div className=" text-center space-y-5 max-w-6xl mx-auto text-lg">
-                    <h1 className="font-medium text-4xl">Our Recipes</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita atque amet distinctio, molestiae tenetur modi adipisci impedit cum? Maxime ipsum nobis sed est, quia odio officiis delectus animi soluta?</p>
+            <section>
+                <div className=' w-[380px] mx-h-[670px] bg-white shadow-xl'>
+
+                    <img src={image} alt="" className=' w-[311px] h-[200px]' />
+
                 </div>
             </section>
         </>
     );
 };
+
+Recipe.propTypes = {
+
+    data: PropTypes.object.isRequired
+}
 
 export default Recipe;

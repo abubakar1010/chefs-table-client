@@ -2,7 +2,7 @@
 import './App.css'
 import Banner from './components/Banner/Banner'
 import NavBar from './components/NavBar/NavBar'
-import Recipe from './components/Recipe/Recipe'
+import Recipes from './components/Recipes/Recipes'
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
     <>
       <NavBar />
       <Banner />
-      <Recipe />
+      <Recipes />
     </>
   )
 }

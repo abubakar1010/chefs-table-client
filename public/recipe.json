@@ -319,38 +319,32 @@
     },
     {
         "id": 12,
-        "name": "Vegetarian Chili",
-        "description": "Hearty and flavorful chili made with beans, vegetables, and spices.",
-        "image": "vegetarian_chili.jpg",
+        "name": "Vegetable Stir-Fry",
+        "description": "A delicious and healthy stir-fry packed with fresh vegetables.",
+        "image": "vegetable_stir_fry.jpg",
         "ingredients": [
-            "1 onion, chopped",
-            "2 cloves garlic, minced",
-            "1 red bell pepper, chopped",
-            "1 green bell pepper, chopped",
-            "2 carrots, diced",
-            "2 stalks celery, diced",
-            "1 can (400g) diced tomatoes",
-            "2 cans (400g each) kidney beans, drained and rinsed",
-            "1 can (400g) black beans, drained and rinsed",
-            "2 cups vegetable broth",
-            "2 tablespoons chili powder",
-            "1 tablespoon ground cumin",
-            "1 teaspoon paprika",
-            "Salt and pepper to taste",
-            "Optional toppings: shredded cheese, sour cream, chopped cilantro, sliced jalapenos"
+          "2 cups broccoli florets",
+          "1 red bell pepper, sliced",
+          "1 yellow bell pepper, sliced",
+          "1 cup sliced mushrooms",
+          "1 cup snap peas",
+          "3 cloves garlic, minced",
+          "1 tablespoon grated ginger",
+          "1/4 cup soy sauce",
+          "2 tablespoons sesame oil",
+          "2 tablespoons cornstarch mixed with 2 tablespoons water"
         ],
-        "preparing_time": "45 minutes",
-        "calories": 300,
-        "servings": 6,
+        "preparing_time": "30 minutes",
+        "calories": 250,
+        "servings": 4,
+        "difficulty": "Intermediate",
         "rating": 4.5,
-        "tags": [
-            "Vegetarian",
-            "Chili",
-            "Comfort Food"
-        ],
-        "source": "Cookie and Kate",
-        "estimated_cost": "$12"
-    },
+        "tags": ["Vegetarian", "Quick and Easy", "Healthy"],
+        "allergens": ["Soy", "Sesame"],
+        "preparation_method": "Stovetop",
+        "source": "Cooking Light Magazine",
+        "estimated_cost": "$10"
+      },
     
     {
         "id": 13,
@@ -388,7 +382,7 @@
         "id": 14,
         "name": "Chicken Caesar Salad",
         "description": "Classic Caesar salad with grilled chicken strips.",
-        "image": "caesar_salad.jpg",
+        "image": "chicken_caesar_salad.jpg",
         "ingredients": [
             "2 boneless, skinless chicken breasts",
             "1 head romaine lettuce, chopped",
@@ -402,33 +396,6 @@
         "calories": 350,
         "servings": 2,
         "instructions": "1. Season chicken breasts with salt and pepper.\n2. Heat olive oil in a skillet over medium-high heat.\n3. Cook chicken breasts until no longer pink in the center, about 6-8 minutes per side.\n4. Let chicken rest for 5 minutes, then slice into strips.\n5. In a large bowl, combine romaine lettuce, croutons, and Parmesan cheese.\n6. Toss salad with Caesar dressing.\n7. Top salad with grilled chicken strips.\n8. Serve immediately."
-    },
-    {
-        "id": 15,
-        "name": "Vegetable Stir-Fry",
-        "description": "A delicious and healthy stir-fry packed with fresh vegetables.",
-        "image": "vegetable_stir_fry.jpg",
-        "ingredients": [
-          "2 cups broccoli florets",
-          "1 red bell pepper, sliced",
-          "1 yellow bell pepper, sliced",
-          "1 cup sliced mushrooms",
-          "1 cup snap peas",
-          "3 cloves garlic, minced",
-          "1 tablespoon grated ginger",
-          "1/4 cup soy sauce",
-          "2 tablespoons sesame oil",
-          "2 tablespoons cornstarch mixed with 2 tablespoons water"
-        ],
-        "preparing_time": "30 minutes",
-        "calories": 250,
-        "servings": 4,
-        "difficulty": "Intermediate",
-        "rating": 4.5,
-        "tags": ["Vegetarian", "Quick and Easy", "Healthy"],
-        "allergens": ["Soy", "Sesame"],
-        "preparation_method": "Stovetop",
-        "source": "Cooking Light Magazine",
-        "estimated_cost": "$10"
-      }
+    }
+   
 ]
