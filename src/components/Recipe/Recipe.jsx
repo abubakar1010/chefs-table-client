@@ -1,7 +1,8 @@
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 
-const Recipe = ({data,handleAddRecipe}) => {
+
+const Recipe = ({data,handleUpdateItems}) => {
     // console.log(data);
     const {name,description,image,ingredients,preparing_time,calories} = data
     // console.log(name,description,image,ingredients,preparing_time,calories,tags);
@@ -14,6 +15,7 @@ const Recipe = ({data,handleAddRecipe}) => {
         
         limitedData = ingredients.slice(0,5)
         // console.log( limitedData.length);
+        
     }
 
     if(isShowMore){
@@ -21,16 +23,19 @@ const Recipe = ({data,handleAddRecipe}) => {
         console.log(limitedData.length);
     }
 
-    
+    // const btn = <button onClick={ () => setIsShowMore(!isShowMore)} className='text-[rgba(135,135,135,1)] text-lg'>... See More</button>
 
+    // CalculateTable functionality implementation here 
+
+    
 
     return (
         <>
             <section>
-                <div className=' w-[370px] mx-h-[670px] bg-white shadow-xl rounded-2xl py-9'>
+                <div className=' w-[380px] mx-h-[670px] bg-white shadow-xl rounded-2xl py-9'>
 
                 <div className='pb-6'>
-                    <img src={image} alt="" className='w-[320px] h-[200px] mx-auto  rounded-2xl' />
+                    <img src={image} alt="" className='w-[340px] h-[250px] mx-auto  rounded-2xl' />
                     
                 </div>
                     
@@ -72,7 +77,7 @@ const Recipe = ({data,handleAddRecipe}) => {
                     </div>
 
                     <div className=' px-8 pt-4'>
-                        <button className='text-[rgba(21,11,43,1)] bg-[rgba(11,229,138,1)]  font-medium rounded-full text-sm px-7 py-3 text-center ' onClick={ () => handleAddRecipe(name, preparing_time, calories)}>Want to cook</button>
+                        <button className='text-[rgba(21,11,43,1)] bg-[rgba(11,229,138,1)]  font-medium rounded-full text-lg px-7 py-3 text-center ' onClick={ () => handleUpdateItems(name,preparing_time,calories)}>Want to cook</button>
                     </div>
 
                 </div>
@@ -84,7 +89,7 @@ const Recipe = ({data,handleAddRecipe}) => {
 Recipe.propTypes = {
 
     data: PropTypes.object.isRequired,
-    handleAddRecipe: PropTypes.func.isRequired
+    handleUpdateItems: PropTypes.func.isRequired
 }
 
 export default Recipe;
