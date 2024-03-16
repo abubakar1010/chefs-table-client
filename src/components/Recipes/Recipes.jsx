@@ -16,7 +16,9 @@ const Recipes = () => {
 
     return (
         <>
-        <section className=" my-28 ">
+
+        <section className="container mx-auto">
+            <section className=" container mx-auto my-28 ">
                 
                 <div className=" text-center space-y-5 max-w-6xl mx-auto text-lg">
                     <h1 className="font-medium text-4xl">Our Recipes</h1>
@@ -25,11 +27,13 @@ const Recipes = () => {
 
             </section>
 
-            <section className=" grid grid-cols-1 xl:grid-cols-2 w-[790px] gap-9">
+            <section className=" grid grid-cols-1 xl:grid-cols-2 w-[840px] gap-9 my-12">
             {
                 data.map( element => <Recipe key={element.id} data={element} />)
             }
             </section>
+        </section>
+
         </>
     );
 };

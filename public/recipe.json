@@ -29,7 +29,7 @@
     {
         "id": 2,
         "name": "Thai Green Curry",
-        "description": "A fragrant and spicy Thai curry made with green curry paste, coconut milk, chicken, and vegetables.",
+        "description": "A fragrant and spicy Thai curry made with green curry paste, milk ...",
         "image": "thai_green_curry.jpg",
         "ingredients": [
             "400ml coconut milk",
@@ -62,7 +62,7 @@
         "image": "chicken_alfredo_pasta.jpg",
         "ingredients": [
             "400g fettuccine pasta",
-            "2 boneless, skinless chicken breasts, sliced",
+            "2 boneless, skinless chicken breasts ...",
             "3 cloves garlic, minced",
             "1 cup heavy cream",
             "1/2 cup grated Parmesan cheese",
@@ -88,7 +88,7 @@
         "description": "A colorful and flavorful Spanish rice dish with assorted vegetables and saffron.",
         "image": "vegetable_paella.jpg",
         "ingredients": [
-            "1 cup paella rice (such as Bomba or Arborio)",
+            "1 cup paella rice",
             "2 cups vegetable broth",
             "1 onion, chopped",
             "2 cloves garlic, minced",
@@ -146,7 +146,7 @@
     {
         "id": 6,
         "name": "Mushroom Risotto",
-        "description": "Creamy and indulgent risotto made with Arborio rice, mushrooms, and Parmesan cheese.",
+        "description": "Creamy and indulgent risotto made with Arborio rice, mushrooms, and ...",
         "image": "mushroom_risotto.jpg",
         "ingredients": [
             "1 cup Arborio rice",
@@ -179,7 +179,7 @@
         "description": "Tender pieces of chicken marinated in spices and served in a rich, creamy tomato sauce.",
         "image": "chicken_tikka_masala.jpg",
         "ingredients": [
-            "500g boneless, skinless chicken thighs, cut into bite-sized pieces",
+            "500g boneless, skinless chicken ...",
             "1 onion, finely chopped",
             "2 cloves garlic, minced",
             "1 tablespoon grated ginger",
@@ -211,7 +211,7 @@
     {
         "id": 8,
         "name": "Caprese Salad",
-        "description": "A simple and refreshing salad made with fresh tomatoes, mozzarella cheese, basil, and balsamic glaze.",
+        "description": "A simple and refreshing salad made with fresh tomatoes, mozzarella cheese, basil ...",
         "image": "caprese_salad.jpg",
         "ingredients": [
             "2 large tomatoes, sliced",
@@ -268,13 +268,13 @@
     {
         "id": 10,
         "name": "Homemade Pizza",
-        "description": "Delicious pizza made from scratch with homemade dough and your favorite toppings.",
+        "description": "Delicious pizza made from scratch with homemade dough ...",
         "image": "meat_pizza.jpg",
         "ingredients": [
             "1 batch homemade pizza dough",
             "1/2 cup pizza sauce",
             "1 1/2 cups shredded mozzarella cheese",
-            "Assorted toppings such as pepperoni, mushrooms, bell peppers, onions, olives, etc."
+            "Assorted toppings ..."
         ],
         "preparing_time": "30 minutes",
         "calories": 300,
@@ -295,7 +295,7 @@
         "image": "lemon_garlic_shrimp_pasta.jpg",
         "ingredients": [
             "300g linguine pasta",
-            "300g large shrimp, peeled and deveined",
+            "300g large shrimp ...",
             "3 cloves garlic, minced",
             "1/4 cup fresh lemon juice",
             "1/4 cup chicken broth",
@@ -349,7 +349,7 @@
     {
         "id": 13,
         "name": "Chashushuli",
-        "description": "A traditional Georgian veal dish, Chashushuli features stewed meat with onions and peppers, seasoned with aromatic spices, and served on a wooden table.",
+        "description": "A traditional Georgian veal dish, Chashushuli...",
         "image": "chashushuli.jpg",
         "ingredients": [
             "500g veal, cut into cubes",
@@ -397,5 +397,4 @@
         "servings": 2,
         "instructions": "1. Season chicken breasts with salt and pepper.\n2. Heat olive oil in a skillet over medium-high heat.\n3. Cook chicken breasts until no longer pink in the center, about 6-8 minutes per side.\n4. Let chicken rest for 5 minutes, then slice into strips.\n5. In a large bowl, combine romaine lettuce, croutons, and Parmesan cheese.\n6. Toss salad with Caesar dressing.\n7. Top salad with grilled chicken strips.\n8. Serve immediately."
     }
-   
 ]
