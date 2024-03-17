@@ -3,7 +3,7 @@ const Cooking = ({cookingItems}) => {
     return (
         <>
             <div className="text-center border-b-2 px-12 my-6 py-4 mx-8">
-                    <h1 className=" text-[#282828] font-medium text-2xl"> Currently cooking: 02 </h1>
+                    <h1 className=" text-[#282828] font-medium text-2xl"> Currently cooking:  </h1>
                 </div>
 
                 <div>
@@ -31,7 +31,7 @@ const Cooking = ({cookingItems}) => {
         <tbody>
             
             
-             {
+            {
                 cookingItems.map( (element, index) => <tr key={index} className="bg-[#28282808] border-b pb-4 ">
 
 

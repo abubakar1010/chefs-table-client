@@ -3,9 +3,9 @@ import { useState } from 'react';
 
 
 const Recipe = ({data,handleUpdateItems}) => {
-    // console.log(data);
+
     const {name,description,image,ingredients,preparing_time,calories} = data
-    // console.log(name,description,image,ingredients,preparing_time,calories,tags);
+
 
     const [isShowMore, setIsShowMore] = useState(false)
 
@@ -14,18 +14,13 @@ const Recipe = ({data,handleUpdateItems}) => {
     if (!isShowMore) {
         
         limitedData = ingredients.slice(0,5)
-        // console.log( limitedData.length);
-        
+
     }
 
     if(isShowMore){
         limitedData = ingredients
         console.log(limitedData.length);
     }
-
-    // const btn = <button onClick={ () => setIsShowMore(!isShowMore)} className='text-[rgba(135,135,135,1)] text-lg'>... See More</button>
-
-    // CalculateTable functionality implementation here 
 
     
 
@@ -50,7 +45,6 @@ const Recipe = ({data,handleUpdateItems}) => {
                         <h1 className=' pb-4 font-medium text-lg text-[rgba(40,40,40,1)]'>Ingredients: {ingredients.length}</h1>
                         <ul className='pb-4 px-3'>
                         {
-                            // limitedData.map( (element, index) => <li  data-after={' See More ...'}  className={`list-decimal text-[rgba(135,135,135,1)] text-lg after:content-[attr(data-after)]`} key={index}>{element}</li>)
                             limitedData.map( (element, index) => <li className=" list-disc text-[rgba(135,135,135,1)] text-lg  " key={index}>{element}</li>)
                         }
                         </ul>
