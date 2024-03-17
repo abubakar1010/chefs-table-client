@@ -39,7 +39,7 @@ const CalculateTable = ({item}) => {
     return (
         <>
             <section className=" py-20">
-                <div className="w-[470px] bg-white shadow-xl pb-12 rounded-lg">
+                <div className="w-[470px] bg-white shadow-xl border-2 pb-12 rounded-lg">
 
                     <section>
                         <div className=" text-center py-8 px-12 ">

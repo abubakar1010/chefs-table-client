@@ -63,9 +63,9 @@ const Cooking = ({cookingItems, totalCookingTime, totalCalories }) => {
 
                 </div>
 
-                <div className=" pb-9 pt-16  pl-56 space-y-3 ">
-                    <h1 className="  font-medium text-[#282828CC] text-lg">Total Time: {totalCookingTime}</h1>
-                    <h1 className="  font-medium text-[#282828CC] text-lg">Total Calories:  {totalCalories}</h1>
+                <div className=" pb-9 pt-16  pl-48 space-y-3 ">
+                    <h1 className="  font-medium text-[#282828CC] text-lg">Total Time: {totalCookingTime} minutes</h1>
+                    <h1 className="  font-medium text-[#282828CC] text-lg">Total Calories:  {totalCalories} calories </h1>
                 </div>
         </>
     );
