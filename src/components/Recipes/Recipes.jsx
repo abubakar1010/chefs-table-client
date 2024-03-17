@@ -55,8 +55,8 @@ const Recipes = () => {
             <div className=" container mx-auto my-28 ">
                 
                 <div className=" text-center space-y-5 max-w-6xl mx-auto text-lg">
-                    <h1 className="font-medium text-4xl">Our Recipes</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita atque amet distinctio, molestiae tenetur modi adipisci impedit cum? Maxime ipsum nobis sed est, quia odio officiis delectus animi soluta?</p>
+                    <h1 className="font-medium text-4xl  tracking-widest">Our Recipes</h1>
+                    <p className="px-24">Our ever-changing menu is inspired by the seasons and celebrates the best local produce with a selection of classics and internationally inspired dishes.</p>
                 </div>
 
             </div>
