@@ -13,7 +13,7 @@ const Recipe = ({data,handleUpdateItems}) => {
 
     if (!isShowMore) {
         
-        limitedData = ingredients.slice(0,5)
+        limitedData = ingredients.slice(0,4)
 
     }
 
@@ -27,7 +27,7 @@ const Recipe = ({data,handleUpdateItems}) => {
     return (
         <>
             <section>
-                <div className=' w-[380px] mx-h-[670px] bg-white shadow-xl rounded-2xl py-9'>
+                <div className=' w-[380px] mx-h-[670px] bg-white shadow-xl rounded-2xl py-9 border-2'>
 
                 <div className='pb-6'>
                     <img src={image} alt="" className='w-[340px] h-[250px] mx-auto  rounded-2xl' />
