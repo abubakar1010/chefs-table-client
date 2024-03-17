@@ -61,7 +61,7 @@ const Recipes = () => {
 
             </div>
 
-            <div className=" flex gap-12">
+            <div className=" flex flex-col lg:flex-row gap-12">
 
             <div className=" grid grid-cols-1 xl:grid-cols-2 w-[840px] gap-9 my-12">
             {
