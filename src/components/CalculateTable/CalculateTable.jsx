@@ -54,7 +54,7 @@ const CalculateTable = ({item}) => {
                                 <thead className="text-xs text-gray-700 uppercase  ">
                                     <tr>
                                         <th scope="col" className="px-1 py-3 text-wrap">
-                                            SL
+                                            
                                         </th>
                                         <th scope="col" className=" w-28 px-1 py-3 text-wrap">
                                             Name
