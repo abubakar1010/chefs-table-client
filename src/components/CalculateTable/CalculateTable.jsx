@@ -1,11 +1,23 @@
 import PropTypes from 'prop-types';
+import Cooking from '../Cooking/Cooking';
+import { useState } from 'react';
 
 const CalculateTable = ({item}) => {
     console.log(item);
+
+    const [cookingItems, setCookingItems] = useState([])
+
+    function handleCookingItems(element){
+
+        const newCookingItems = [...cookingItems,element]
+
+        setCookingItems(newCookingItems)
+
+    }
     return (
         <>
             <section className=" py-20">
-                <div className="w-[470px] bg-white shadow-xl ">
+                <div className="w-[470px] bg-white shadow-xl pb-12 rounded-lg">
 
                     <section>
                         <div className=" text-center py-8 px-12 ">
@@ -56,7 +68,7 @@ const CalculateTable = ({item}) => {
                                             {element.calories}
                                         </td>
                                         <td className="pl-4 py-4 font-medium text-[#282828B2] text-wrap w-8">
-                                        <button className='text-[rgba(21,11,43,1)] bg-[rgba(11,229,138,1)]  font-medium rounded-xl text-lg px-2 py-3 text-center '>Preparing</button>
+                                        <button className='text-[rgba(21,11,43,1)] bg-[rgba(11,229,138,1)]  font-medium rounded-xl text-lg px-2 py-3 text-center ' onClick={() => {handleCookingItems(element)}}>Preparing</button>
                                         </td>
     
                                         </tr>)
@@ -70,14 +82,14 @@ const CalculateTable = ({item}) => {
                     </section>
 
                     <section>
-                        <div className=" text-center py-8 px-12">
+                        {/* <div className=" text-center py-8 px-12">
 
                             <h1 className=" text-[#282828] font-medium border-b-2 pb-5 text-2xl ">Currently cooking:{}</h1>
-                        </div>
+                        </div> */}
 
 
 
-                        <div className="relative overflow-x-auto sm:rounded-lg px-4">
+                        {/* <div className="relative overflow-x-auto sm:rounded-lg px-4">
                             <table className="w-full text-sm text-left rtl:text-right text-gray-500 mb-6">
                                 <thead className="text-xs text-gray-700 uppercase  ">
                                     <tr>
@@ -97,12 +109,15 @@ const CalculateTable = ({item}) => {
                                     </tr>
                                 </thead>
 
-                                {/* {
+                                {
                                         currentlyCookingItem.map( (element,index) => <tbody key={index}>{element}</tbody>)
-                                    } */}
+                                    } 
 
                             </table>
-                        </div>
+                        </div> */}
+
+                        <Cooking cookingItems={cookingItems} />
+
                     </section>
 
 

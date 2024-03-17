@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-const Cooking = ({selectedRecipe}) => {
+const Cooking = ({cookingItems}) => {
     return (
         <>
             <div className="text-center border-b-2 px-12 my-6 py-4 mx-8">
@@ -13,20 +13,17 @@ const Cooking = ({selectedRecipe}) => {
     <table className="w-full text-sm text-center">
         <thead className="text-xs  uppercase  ">
             <tr>
-                <td scope="col" className="px-2 py-3">
+                <td scope="col" className="px-4 py-3">
                     
                 </td>
-                <th scope="col" className="px-3 py-3">
+                <th scope="col" className="px-4 py-3">
                     name
                 </th>
-                <th scope="col" className="px-3 py-3">
+                <th scope="col" className="px-4 py-3">
                     Time
                 </th>
-                <th scope="col" className="px-3 py-3">
+                <th scope="col" className="px-4 py-3">
                     Calories
-                </th>
-                <th scope="col" className=" py-3">
-                    
                 </th>
                 
             </tr>
@@ -34,28 +31,28 @@ const Cooking = ({selectedRecipe}) => {
         <tbody>
             
             
-            {
-                selectedRecipe.map( (element, index) => <tr className="bg-white border-b" key={index}>{element}</tr>)
-
-            }
-
-                {/* <tr className="bg-[#28282808] border-b pb-4 ">
+             {
+                cookingItems.map( (element, index) => <tr key={index} className="bg-[#28282808] border-b pb-4 ">
 
 
-                <td scope="row" className="px-2 py-4 font-medium text-[#282828B2] text-wrap w-8 ">
-                    {serialOfItem}
+                <td scope="row" className="px-4 py-4 font-medium text-[#282828B2] text-wrap w-8 ">
+                    {index + 1}
                 </td>
-                <td scope="row" className="px-2 py-4 font-medium text-[#282828B2] text-wrap w-28 ">
-                    {name}
+                <td scope="row" className="px-4 py-4 font-medium text-[#282828B2] text-wrap w-28 ">
+                    {element.name}
                 </td>
-                <td className="px-2 py-4 font-medium text-[#282828B2] text-wrap w-8">
-                    {preparing_time}
+                <td className="px-4 py-4 font-medium text-[#282828B2] text-wrap w-8">
+                    {element.preparing_time}
                 </td>
                 <td className="pl-5 py-4 font-medium text-[#282828B2] text-wrap w-8">
-                    {calories}
+                    {element.calories}
                 </td>
 
-                </tr> */}
+                </tr>)
+
+            } 
+
+                
 
             
         </tbody>
@@ -69,7 +66,7 @@ const Cooking = ({selectedRecipe}) => {
 
 Cooking.propTypes = {
 
-    selectedRecipe: PropTypes.array.isRequired
+    cookingItems: PropTypes.array.isRequired
 }
 
 export default Cooking;
