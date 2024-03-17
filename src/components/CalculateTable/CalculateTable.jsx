@@ -10,6 +10,9 @@ const CalculateTable = ({item}) => {
 
     const [cookingItems, setCookingItems] = useState([])
 
+    const [totalCookingTime, setTotalCookingTime] = useState(0)
+    const [totalCalories, setTotalCalories] = useState(0)
+
 
     function handleCookingItems(element){
 
@@ -18,8 +21,16 @@ const CalculateTable = ({item}) => {
         setCookingItems(newCookingItems)
 
 
+        
 
         item.splice( (item.indexOf(element)), 1 )
+
+        const updatedTime = parseInt(element.preparing_time) + totalCookingTime
+
+        setTotalCookingTime(updatedTime)
+        const updatedCalories = parseInt(element.calories) + totalCalories
+
+        setTotalCalories(updatedCalories)
 
     }
 
@@ -95,7 +106,7 @@ const CalculateTable = ({item}) => {
 
                     <section>
 
-                        <Cooking cookingItems={cookingItems} />
+                        <Cooking cookingItems={cookingItems} totalCookingTime={totalCookingTime} totalCalories={totalCalories} />
 
                     </section>
 

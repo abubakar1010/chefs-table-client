@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-const Cooking = ({cookingItems}) => {
+const Cooking = ({cookingItems, totalCookingTime, totalCalories }) => {
     return (
         <>
             <div className="text-center border-b-2 px-12 my-6 py-4 mx-8">
@@ -34,7 +34,7 @@ const Cooking = ({cookingItems}) => {
                         
                         
                         {
-                            cookingItems.map( (element, index) => <tr key={index} className="bg-[#28282808] border-b pb-4 ">
+                            cookingItems.map( (element, index) => <tr  key={index} className="bg-[#28282808] border-b pb-4 ">
 
 
                             <td scope="row" className="px-4 py-4 font-medium text-[#282828B2] text-wrap w-8 ">
@@ -62,13 +62,20 @@ const Cooking = ({cookingItems}) => {
             </div>
 
                 </div>
+
+                <div className=" pb-9 pt-16  pl-56 space-y-3 ">
+                    <h1 className="  font-medium text-[#282828CC] text-lg">Total Time: {totalCookingTime}</h1>
+                    <h1 className="  font-medium text-[#282828CC] text-lg">Total Calories:  {totalCalories}</h1>
+                </div>
         </>
     );
 };
 
 Cooking.propTypes = {
 
-    cookingItems: PropTypes.array.isRequired
+    cookingItems: PropTypes.array.isRequired,
+    totalCookingTime: PropTypes.number.isRequired,
+    totalCalories: PropTypes.number.isRequired,
 }
 
 export default Cooking;
