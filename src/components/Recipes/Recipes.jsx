@@ -2,9 +2,14 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Recipe from "../Recipe/Recipe";
 import CalculateTable from "../CalculateTable/CalculateTable";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Recipes = () => {
+
+
+    // fetch data implementation process start here 
 
     const [data, setData] = useState([])
 
@@ -16,36 +21,22 @@ const Recipes = () => {
     },[])
 
 
-    // const [serialOfItem, setSerialOfItem] = useState(1)
+    // UpdateItem cooking data here 
 
     const [item, setItem] = useState([])
-    // const [currentlyCookingItem, setCurrentlyCookingItem] = useState([])
 
     const handleUpdateItems = (name,preparing_time,calories) => {
 
-        // const newSerial = serialOfItem + 1
-        // setSerialOfItem(newSerial)
-        // console.log(serialOfItem);
-    //     const tableRow = <tr className="bg-[#28282808] border-b pb-4 ">
 
+        const filterDuplicateItem = item.filter( element => element.name === name)
 
-    //     <td scope="row" className="px-2 py-4 font-medium text-[#282828B2] text-wrap w-8 ">
-    //         {serialOfItem}
-    //     </td>
-    //     <td scope="row" className="px-2 py-4 font-medium text-[#282828B2] text-wrap w-28 ">
-    //         {name}
-    //     </td>
-    //     <td className="px-2 py-4 font-medium text-[#282828B2] text-wrap w-8">
-    //         {preparing_time}
-    //     </td>
-    //     <td className="pl-5 py-4 font-medium text-[#282828B2] text-wrap w-8">
-    //         {calories}
-    //     </td>
-    //     <td className="pl-4 py-4 font-medium text-[#282828B2] text-wrap w-8">
-    //     <button className='text-[rgba(21,11,43,1)] bg-[rgba(11,229,138,1)]  font-medium rounded-xl text-lg px-2 py-3 text-center ' onClick={ () => handleCooking(name,preparing_time,calories)}>Preparing</button>
-    //     </td>
-        
-    // </tr>
+        if(filterDuplicateItem.length !== 0){
+            
+            toast.warn(
+            "Oops! You can only select one item at a time. Please choose a different item. Thank you!");
+            return
+        }
+
 
     const newItemDetails = {name,preparing_time,calories}
 
@@ -53,40 +44,8 @@ const Recipes = () => {
 
     setItem(selectedItem)
 
-    console.log(item);
 
     }
-
-    // const handleCooking = (name,preparing_time,calories) => {
-
-    // //     const row = <tr className="bg-[#28282808] border-b pb-4 ">
-
-
-    // //     <td scope="row" className="px-2 py-4 font-medium text-[#282828B2] text-wrap w-8 ">
-    // //         {serialOfItem}
-    // //     </td>
-    // //     <td scope="row" className="px-2 py-4 font-medium text-[#282828B2] text-wrap w-28 ">
-    // //         {name}
-    // //     </td>
-    // //     <td className="px-2 py-4 font-medium text-[#282828B2] text-wrap w-8">
-    // //         {preparing_time}
-    // //     </td>
-    // //     <td className="pl-5 py-4 font-medium text-[#282828B2] text-wrap w-8">
-    // //         {calories}
-    // //     </td>
-        
-    // // </tr>
-
-    // const selected = [...(JSON.parse(JSON.stringify(currentlyCookingItem))),row];
-    
-
-    // setCurrentlyCookingItem(selected)
-    // console.log(currentlyCookingItem);
-
-    // }
-
-
-    // console.log(currentlyCookingItem);
 
 
     return (
@@ -116,6 +75,7 @@ const Recipes = () => {
 
             </div>
         </section>
+        <ToastContainer />
 
         </>
     );
