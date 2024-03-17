@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 import Cooking from '../Cooking/Cooking';
 import { useState } from 'react';
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -33,8 +31,6 @@ const CalculateTable = ({item}) => {
         setTotalCalories(updatedCalories)
 
     }
-
-
 
     return (
         <>
@@ -110,10 +106,8 @@ const CalculateTable = ({item}) => {
 
                     </section>
 
-
-
                 </div>
-                {/* <ToastContainer /> */}
+
             </section>
         </>
     );
